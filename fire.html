@@ -144,7 +144,8 @@ Por entre o silêncio ensurdecedor que nas ruínas reinava, um estrondo ouviu-se
 
 [[Agarrar à esperança de que nem tudo estava perdido.|3a]]
 [[Aproveitar finalmente a chance do recomeço.|3b]]
-</tw-passagedata><tw-passagedata pid="6" name="3a" tags="" position="800,375" size="100,100">O barulho do exterior depressa se desvaneceu à medida que os olhos passavam pela ruína à sua volta. Apesar da promessa de um novo mundo em que talvez pudesse ser feliz, entre as quatro paredes sabia que existia algo que não conseguia ainda abandonar. 
+
+(set: $quadro to false)</tw-passagedata><tw-passagedata pid="6" name="3a" tags="" position="800,375" size="100,100">O barulho do exterior depressa se desvaneceu à medida que os olhos passavam pela ruína à sua volta. Apesar da promessa de um novo mundo em que talvez pudesse ser feliz, entre as quatro paredes sabia que existia algo que não conseguia ainda abandonar. 
 
 Irónico como, passados tantos anos a desejar poder escapar, uma força maior a impelia a ficar.  
 
@@ -337,10 +338,12 @@ Como o faria? Não sabia. Não tinha nada, só o casaco no corpo.
 Conseguiria viver sem a riqueza e conforto de um teto sobre si?
 Livre de qualquer amarra do passado. As memórias, deixou-as também ficar desvanecidas no fumo da casa em brasa.
 
-Só uma coisa não conseguia esquecer. A respiração que para trás tinha deixado. Que ouviu e preferiu esquecer. Não a filha que perdeu, 
+Só uma coisa não conseguia esquecer. A respiração que para trás tinha deixado. Que ouviu e preferiu esquecer. 
 
-(if $quadro is 1)[[fim-b]]
-(if $quadro is 1)[[fim-g]]</tw-passagedata><tw-passagedata pid="19" name="11" tags="" position="150,1400" size="100,100">Assim que as suas pupilas tornaram a ver a luz, também a realização do que tinha feito a iluminou.
+(if: $quadro is true)[ [[Partir para uma nova vida|fim-b]] ]
+(if: $quadro is false)[ [[Partir para uma nova vida|fim-g]] ]
+
+</tw-passagedata><tw-passagedata pid="19" name="11" tags="" position="150,1400" size="100,100">Assim que as suas pupilas tornaram a ver a luz, também a realização do que tinha feito a iluminou.
 
 As mãos cobertas do sangue pegajoso, que pingava e colava à pele, pintando-a de vermelho quente e vermelho vivo, de alguém que agora jazia morto. 
 
@@ -464,7 +467,7 @@ O seu próprio olhar no espelho, que com culpa e amargura, não podiam deixar de
 
 Engoliu em seco, colocando a mão sobre o ventre agora vazio,.
 Que tipo de mulher acordava e nem se lembrava de procurar a filha no meio da penúria?
-(set: $quadro to 1)
+(set: $quadro to true)
 
 [[Continuar| 6b]]</tw-passagedata><tw-passagedata pid="27" name=" 6b" tags="" position="800,750" size="100,100">A memória do batizado pesou-lhe na consciência. Tanto tempo presa no seu interior levaram-na a tudo questionar e debater, sem parar para apreciar tudo o que na sua vida tinha dado certo.
 
@@ -851,39 +854,53 @@ Mas, mesmo se a chance fosse real,
 
 [[Teria tomado outra decisão?|intro]]</tw-passagedata><tw-passagedata pid="46" name="fim-h" tags="end" position="275,1400" size="100,100">Antes de abandonar a mansão, pegou no chicote e fechou a porta atrás de si.
 
-Os aldeões fitavam a mulher, ainda tentaram argumentar antes da sua partida, mas do nada adiantou. Discutir com uma mulher claramente em choque, de faca na mão, não pareceu um bom plano. 
+Os aldeões fitavam a mulher, ainda tentaram argumentar antes da sua partida, mas do nada adiantou. Discutir com uma mulher claramente em choque, não pareceu um bom plano. 
 Desejavam ter levado a cabo o seu plano, garantindo o fim da família. Amaldiçoando a empatia e pena inicial que sentiram mal a viram a sair do quarto. Era gratitude mal colocada, afinal, estavam enganados, ela nada era como eles. Só mais uma nobre arrogante, e desses não faltavam no reino.
 
-Mas 
+Mas já era tarde demais. A mulher tinha já partido.
 
-A aragem a entrar por dentro do casaco largo que a cobria, esvoaçando. O vento a fazer dançar os seus cabelos , os arrepios provocados pelo frio nas gotas de suor, as cócegas nos dedos dos pés pelo raspar da relva verde, o sol a acariciar a sua pele.
-Então era esta a chama da liberdade.
+A aragem entrava-lhe por dentro do casaco largo, fazendo-o esvoaçar. O vento balançava os seus cabelos, os arrepios provocados pelo frio nas gotas de suor. Era esta a chamada da liberdade.
 
-Irreconhecível. Sem o colar que dizia que lhe pertencia. Sem as roupas que desmascaravam a sua origem.
-Nua, sem nome. Podia ser quem quisesse agora.
+Irreconhecível. Sem o colar que dizia que lhe pertencia. Sem as roupas que desmascaravam a sua origem.  Podia ser quem quisesse agora.
 
-Mas antes do seu recomeço, precisava de se limpar do sangue seco que lhe cobria as mãos e decorava a cara dos salpicos. 
+Partiu para longe, sem destino. Mas a jornada revelou-se mais difícil que o esperado. Ninguém sabia a sua identidade, ninguém acreditava na sua história de desgraça. Sozinha, sem qualquer apoio de uma comunidade, deu por si a vaguear.
+A felicidade parecia difícil de alcançar.
 
-Parou perto de um lago, e mergulhou. Sentiu a água límpida lavar-lhe a cara, purificar a alma. Era um novo batismo, a comemoração de um novo eu. Ao contrário do de Joana, ninguém lhe dizia o que vestir, o  que comer, o que podia ou não fazer. 
-Neste quadro para a posterioridade ela constava, ao contrário do esquecido e queimado na mansão, cujas personagens retratadas partilhavam todas o mesmo fim. 
-Nunca achou que o quadro fosse previr o seu futuro, mas aqui estava ela, e os outros não. A doce ironia da tradição, que empenhada em garantir a puridade da celebração, impedindo o corpo feminino pós-parto de ser retratado, traçou no destino a sua salvação.
-
-Limpa, prosseguiu. 
-Sem roupa, sem nome, podia ser quem quisesse.
-Ou quem a sociedade a deixava ser.
-
-Demorou a conseguir atingir a liberdade. Se a atingiu totalmente? Quem sabe.
-Agora noutra nação, longe de tudo e todos que outrora conheceu, estava longe das amarras de quem a tentaram tornar.
+Demorou, mas eventualmente achou um novo recanto para começar. Nada tinha a ver com o local de onde partira. Mas noutra nação, longe de tudo e todos que outrora conheceu, estava longe das amarras de quem a tentaram tornar.
 
 As marcas nas costas eram os únicos resquícios da vida passada.
 As cicatrizes das brasas o relembrar do seu renascimento. Uma mulher nova, erguida das chamas.
 
-A trabalhar no campo a milhas de distância, com o corpo queimado das horas de labuta diária no sol escaldante, não se arrependia da sua decisão. 
-Do passado, apenas uma dúvida lhe invadia a mente na calada da noite. Visões de um berço, virado ao contrário. 
+A trabalhar no campo a milhas de distância, com o corpo queimado das horas de labuta diária no sol escaldante, arrependia-se de algumas decisões. A vida era difícil, e com o passar dos anos passou a compreender outras motivações. Tinha sido demasiado dura, demasiado rígida. Como a sua vida poderia ser tão diferente da que agora levava, se vivesse com mais empatia.
 
-Mas, mesmo se a chance fosse real, 
+Às vezes, dava por si a desejar retornar ao passado.
+Mas, se tivesse a chance,
 
-[[Teria tomado outra decisão?|intro]]</tw-passagedata><tw-passagedata pid="47" name="fim-i" tags="end" position="625,1650" size="100,100"></tw-passagedata></tw-storydata>
+[[Fá-lo-ia??|intro]]</tw-passagedata><tw-passagedata pid="47" name="fim-i" tags="end" position="625,1650" size="100,100">Antes de abandonar a mansão, pegou no chicote e fechou a porta atrás de si.
+
+Os aldeões fitavam a mulher, ainda tentaram argumentar antes da sua partida, mas do nada adiantou. Discutir com uma mulher claramente em choque, com uma bebé na mão, não pareceu um bom plano. 
+
+Desejavam ter levado a cabo o seu plano, garantindo o fim da família. Amaldiçoando a empatia e pena inicial que sentiram mal a viram a sair do quarto. Era gratitude mal colocada, afinal, estavam enganados, ela nada era como eles. Só mais uma nobre arrogante, e desses não faltavam no reino. Desejavam só boa sorte à criança que a acompanhava, que crescesse para ser melhor do que a mulher que a criava.
+
+Mas já era tarde demais. Ela tinha já partido.
+
+A aragem entrava-lhe por dentro do casaco largo, fazendo-o esvoaçar. O vento balançava os seus cabelos, os arrepios provocados pelo frio nas gotas de suor. Era esta a chamada da liberdade.
+
+Irreconhecível. Sem o colar que dizia que lhe pertencia. Sem as roupas que desmascaravam a sua origem.  Podia ser quem quisesse agora.
+
+Partiu para longe, sem destino. Mas a jornada revelou-se mais difícil que o esperado. Ninguém sabia a sua identidade, ninguém acreditava na sua história de desgraça. Sozinha, sem qualquer apoio de uma comunidade, deu por si a vaguear. E sem ajuda, tentar arranjar forma de salvar a filha parecia tarefa impossível.
+
+Demorou, mas eventualmente achou um novo recanto para começar. Nada tinha a ver com o local de onde partira. Mas noutra nação, longe de tudo e todos que outrora conheceu, estava longe das amarras de quem a tentaram tornar.  
+Mas teria valido a pena? Apesar do novo começo, a felicidade parecia impossível de alcançar, pensava enquanto enterrava a filha junto do casebre insalúbre onde tinha fixado a sua vida,
+
+As marcas nas costas e a cruz na terra eram os únicos resquícios da vida passada.
+
+A trabalhar no campo a milhas de distância, com o corpo queimado das horas de labuta diária no sol escaldante, arrependia-se de algumas decisões. A vida era difícil, e com o passar dos anos passou a compreender outras motivações. Tinha sido demasiado dura, demasiado rígida. Como a sua vida poderia ser tão diferente da que agora levava, se vivesse com mais empatia.
+
+Às vezes, dava por si a desejar retornar ao passado.
+Mas, se tivesse a chance,
+
+[[Fá-lo-ia??|intro]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
